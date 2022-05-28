@@ -498,7 +498,7 @@ justify-items: center;
     }
     }
 
-@media only screen and (min-width: 1px) and (max-width: 425px){
+/* @media only screen and (min-width: 1px) and (max-width: 425px){
     .zapatillas{
         display: grid;
         grid-template-columns: 100%;
@@ -537,19 +537,49 @@ justify-items: center;
     .card6{
         grid-area:card6 ;
     } 
+} */
+
+                                /* modelo responsive para novedades */
+
+.responsive{ @media only screen and (min-width: 1px) and (max-width: 425px){
+
+    .novedades1{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(9, 1fr);
+        grid-template-areas: 
+        " titulo1 "
+        " card1 "
+        " card2 "
+        " card3 "
+        "titulo2"
+        " card4 "
+        " card5 "
+        " card6 ";
+    }
+    .titulo1{ 
+        grid-area: titulo1;
+    }
+    .titulo2{
+        grid-area: titulo2;
+    }
+    .card1{
+        grid-area: card1;
+    }
+    .card2{
+        grid-area: card2;
+    }
+    .card3{
+        grid-area: card3;
+    }
+    .card4{
+        grid-area: card4;
+    }
+    .card5{
+        grid-area: card5;
+    }
+    .card6{
+        grid-area: card6;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                /*modelo responsive*/
+}
