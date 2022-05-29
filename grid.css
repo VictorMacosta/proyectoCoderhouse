@@ -9,9 +9,10 @@ body{
                                 /*header*/
 
 .titulo{
+    width: 100%;
     display: flex;
     justify-content: center;
-    padding: 30px;
+    padding: 30px 0px;
     color: #42aad0e8;
     background-color: #040c0fe8;
     font-size: 1.2em;
@@ -73,7 +74,6 @@ body{
     display: flex;
     padding: 30px;
     height: 400px;
-    /* border: solid 1px black; */
     margin-left: 40px;
 }
 .dama div{
@@ -99,8 +99,18 @@ body{
     margin-top: 60px;
     padding: 7px;
 }
+.hidden{
+    background-color: #fff;
+    box-shadow: 0 1px 1px 1px grey;
+    height: 380px;
+    margin: 10px;
+    border: solid 1px black
+}
 
 .dama, .hombre, img{
+    width: 250px;
+}
+.hidden img{
     width: 250px;
 }
                                 /* modelos*/
@@ -113,7 +123,10 @@ body{
     font-size: 1.6em;
     color: #020507e8;
     margin-bottom: 50px;
-}                                
+}       
+.textomobil{
+    display: none;
+}                         
                                 /* texto*/
 
                                 /* footer*/
@@ -425,8 +438,10 @@ justify-items: center;
                                 /*iniciar*/
 
 .form{
-    height: 600px;
+    height: 100vh;
 }
+
+
 .formulario{
     width: 400px;
     background-color: rgb(63, 62, 51);
@@ -468,41 +483,56 @@ justify-items: center;
 
                                 /*modelo responsive*/
                                 
-
-
 @media only screen and (min-width: 1px) and (max-width: 425px){
     .titulo{
-        display: flex;
-        justify-content: flex-start;
-        padding: 30px;
-        color: #42aad0e8;
-        background-color: #040c0fe8;
-        font-size: 1.2em;
+        width: 100%;
+        padding: 40px 0px;
     }
     .navpadre{
+        width: 100%;
+        padding: 0px;
+    }
+    .portadapadre{
         display: flex;
-        justify-content:start;
-        padding: 10px; 
-        background-color: #040c0fe8;
+        flex-direction: column;
+        align-items: center;
+    }
+    .img{
+        width: 100%;
+        margin: 70px 0px -2px 0px;
+    }
+    .img1{
+        display: none;
+    }
+    #modelopadre{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "dama"
+        "hombre";
+    }
+    .dama{
+        grid-area: dama;
+    }
+    .hombre{
+        grid-area: hombre;
     }
     .texto{
         display: none;
+        
     }
-    .footer{
-        display: flex;
-        justify-content: start;
-        padding: 50px;
-        color: #42aad0e8;
-        background-color: #040c0fe8;
-        font-size: 1.2em;
+    .hidden{
+        display: none;
     }
-    }
+}
 
-/* @media only screen and (min-width: 1px) and (max-width: 425px){
+@media only screen and (min-width: 1px) and (max-width: 425px){
+
     .zapatillas{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: repeat(7,1fr);
+        grid-template-rows: 30px repeat(6,1fr);
         grid-template-areas: 
         "pTitulo"
         "card1"
@@ -510,7 +540,7 @@ justify-items: center;
         "card3"
         "card4"
         "card5"
-        "card6"
+        "card6";
         margin-top: 30px;
         justify-content: center;
         justify-items: center;  
@@ -520,24 +550,132 @@ justify-items: center;
         align-items: center;
     }
     .card1{
-        grid-area:card1 ;
+        grid-area: card1;
     }
     .card2{
-        grid-area:card2 ;
+        grid-area: card2;
     }
     .card3{
-        grid-area:card3 ;
+        grid-area: card3;
     }
     .card4{
-        grid-area:card4 ;
+        grid-area: card4;
     }
     .card5{
-        grid-area:card5 ;
+        grid-area: card5;
     }
     .card6{
-        grid-area:card6 ;
+        grid-area: card6;
     } 
-} */
+}  
+@media only screen and (min-width: 1px) and (max-width: 425px){
+    .pDama{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows:30px repeat(11,1fr);
+        grid-template-areas:
+        "damaTitulo"
+        " card7 "
+        " card8 "
+        " card9 "
+        " card10 "
+        " card11 "
+        " card12 "
+        " card13 "
+        " card14 "
+        " card15 "
+        " card16 "
+        " card17 ";
+    }
+    .damaTitulo{
+        grid-area:damaTitulo ;
+    }
+    .card7{
+        grid-area: card7;
+    } 
+    .card8{
+        grid-area: card8;
+    }
+    .card9{
+        grid-area: card9;
+    }
+    .card10{
+        grid-area: card10;
+    }
+    .card11{
+        grid-area: card11;
+    }
+    .card12{
+        grid-area: card12;
+    }
+    .card13{
+        grid-area: card13;
+    }
+    .card14{
+        grid-area: card14;
+    }
+    .card15{
+        grid-area: card15;
+    }
+    .card16{
+        grid-area: card16;
+    }
+    .card17{
+        grid-area: card17;
+    }
+}
+@media only screen and (min-width: 1px) and (max-width: 425px){
+    .caballero{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 30px repeat(10,1fr);
+        grid-template-areas:
+        "caballeroTitulo"
+        " card19 "
+        " card20 "
+        " card21 "
+        " card22 "
+        " card23 "
+        " card24 "
+        " card25 "
+        " card26 "
+        " card27 "
+        " card28 ";
+    }
+    .caballeroTitulo{
+        grid-area: caballeroTitulo;
+    }
+    .card19{
+        grid-area: card19;
+    } 
+    .card20{
+        grid-area: card20;
+    }
+    .card21{
+        grid-area: card21;
+    }
+    .card22{
+        grid-area: card22;
+    }
+    .card23{
+        grid-area: card23;
+    }
+    .card24{
+        grid-area: card24;
+    }
+    .card25{
+        grid-area: card25;
+    }
+    .card26{
+        grid-area: card26;
+    }
+    .card27{
+        grid-area: card27;
+    }
+    .card28{
+        grid-area: card28;
+    }
+}
 
                                 /* modelo responsive para novedades */
 
