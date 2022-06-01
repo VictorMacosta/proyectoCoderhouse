@@ -2,12 +2,11 @@
     /* background-color:#e0e0e0; */
     margin: 0;
     padding: 0;
+
 }
 body{
      background-color: #e0e0e0; 
-}
-                                /*header*/
-
+}                                /*header*/
 .titulo{
     width: 100%;
     display: flex;
@@ -28,11 +27,9 @@ body{
     color: #42aad0e8;
     text-decoration: none;
     font-size: 1.2em;
-}
-                                /*header*/
-
+    transition: 0.5s;
+}                                /*header*/
                                 /* portada*/
-
 .portadapadre{
     display: flex;
     justify-content: center
@@ -46,11 +43,8 @@ body{
     width: 600px;
     height: 400px;
     margin: 70px 50px 50px -3px;
-}
-                                /*portada*/
-
+}                                /*portada*/
                                 /* modelos*/
-
 #modelopadre{
     display: grid;
     grid-template-columns: 1fr 30px 1fr;
@@ -61,15 +55,12 @@ body{
     align-items: center;
     margin-right: 60px;
 }
-
 .dama{
     grid-area:dama ;
 }
-
 .hombre{
     grid-area: hombre;
 }
-
 .dama, .hombre{
     display: flex;
     padding: 30px;
@@ -82,6 +73,7 @@ body{
     height: 380px;
     margin: 10px;
     border: solid 1px black
+    transform: scale(0.8);
 }
 .dama div p{
         margin-top: 60px;
@@ -93,8 +85,8 @@ body{
     height: 380px;
     margin: 10px;
     border: solid 1px black
+    transform: scale(0.8);
 }
-
 .hombre div p{
     margin-top: 60px;
     padding: 7px;
@@ -104,19 +96,15 @@ body{
     box-shadow: 0 1px 1px 1px grey;
     height: 380px;
     margin: 10px;
-    border: solid 1px black
+    
 }
-
 .dama, .hombre, img{
     width: 250px;
 }
 .hidden img{
     width: 250px;
-}
-                                /* modelos*/
-
+}                                /* modelos*/
                                 /* texto*/
-
 .texto{
     display: flex;
     justify-content: space-around;
@@ -126,11 +114,8 @@ body{
 }       
 .textomobil{
     display: none;
-}                         
-                                /* texto*/
-
+}                                /* texto*/
                                 /* footer*/
-
 .footer{
     display: flex;
     justify-content: center;
@@ -141,36 +126,19 @@ body{
     font-size: 1.2em;
 }
 .footer a{
-    /* margin-top: 50px; */
     padding: 0 10px;
     color: #42aad0e8;
     text-decoration: none;
     font-size: 1.2em;
-}
-
-                                /* footer*/
-
+    transition: 0.5s;
+}                                /* footer*/
                                 /*index*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                 /*html productos*/
-
                                 /*productos-zapatillas*/
-
+.scale__img{
+    will-change: 250px;
+    transition: 0.7s;
+}
 .zapatillas{
     display: grid;
     grid-template-columns: 270px 270px 270px 270px 270px;
@@ -183,9 +151,7 @@ body{
     margin-top: 30px;
     justify-content: center;
     justify-items: center;
-    
 }
-
 .pTitulo{
     grid-area: pTitulo;
     align-items: center;
@@ -208,7 +174,6 @@ body{
 .card6{
     grid-area:card6 ;
 } 
-
 .card1,.card2,.card3,.card4,.card5,.card6{
     background-color: #fff;
     box-shadow: 0 1px 1px 1px grey;
@@ -217,16 +182,11 @@ body{
     margin: 10px;
     border: solid 1px black
 }
-
 div p{
     margin-top: 60px;
     padding: 7px;
-}
-
-                                /*productos-zapatillas*/
-
+}                                /*productos-zapatillas*/
                                 /*producto-dama*/
-
 .pDama{                          
 display: grid;
 grid-template-columns: 270px 270px 270px 270px 270px;
@@ -242,7 +202,6 @@ margin-top: 30px;
 justify-content: center;
 justify-items: center;
 }
-
 .damaTitulo{
     grid-area: damaTitulo;
 }
@@ -279,7 +238,6 @@ justify-items: center;
 .card17{
     grid-area: card17;
 }
-
 .card7,.card8,.card9,.card10,.card11,.card12,.card13,.card14,.card15,.card16,.card17{
     background-color: #fff;
     box-shadow: 0 1px 1px 1px grey;
@@ -287,12 +245,8 @@ justify-items: center;
     height: 380px;
     margin: 10px;
     border: solid 1px black
-}
-
-                                /*producto-dama*/
-
+}                                /*producto-dama*/
                                 /*producto-caballero*/
-
 .caballero{
     display: grid;
 grid-template-columns: 270px 270px 270px 270px 270px;
@@ -309,7 +263,6 @@ margin-bottom: 50px;
 justify-content: center;
 justify-items: center;
 }
-
 .caballeroTitulo{
     grid-area: caballeroTitulo;
 }
@@ -343,8 +296,6 @@ justify-items: center;
 .card28{
     grid-area: card28;
 }
-
-
 .card19,.card20,.card21,.card22,.card23,.card24,.card25,.card26,.card27,.card28{
     background-color: #fff;
     box-shadow: 0 1px 1px 1px grey;
@@ -352,32 +303,9 @@ justify-items: center;
     height: 380px;
     margin: 10px;
     border: solid 1px black
-}
-
-
-
-
-                                /*producto-caballero*/
-
+}                                /*producto-caballero*/
                                 /*html productos*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                 /*novedades*/
-
 .novedades1{
     display: grid;
     grid-template-columns: 270px 270px 270px 270px 270px; 
@@ -393,10 +321,8 @@ margin-bottom: 50px;
 justify-content: center;
 justify-items: center;
 }  
-
 .titulo1{
     grid-area: titulo1;
-    
 }
 .titulo2{
     grid-area: titulo2;
@@ -418,30 +344,11 @@ justify-items: center;
 }
 .card6{
     grid-area: card6;
-} 
-
-                                /*novedades*/ 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                /*iniciar*/
-
+}                                /*novedades*/ 
+                               /*iniciar*/
 .form{
     height: 100vh;
 }
-
-
 .formulario{
     width: 400px;
     background-color: rgb(63, 62, 51);
@@ -452,13 +359,11 @@ justify-items: center;
     border-radius: 6px;
 
 }
-
 .registro{
     font-size: 1.3em;
     margin-bottom: 20px;
     text-align: center;
 }
-
 .inpt{
     width: 100%;
     padding: 5px;
@@ -474,15 +379,118 @@ justify-items: center;
     border: none;
     font-size: 1.3em;
     font-family: 'Times New Roman';
-    
-
 }
 
-                                    
-                            
-
-                                /*modelo responsive*/
-                                
+                                                                /*animaciones*/
+                     /*index*/
+.navpadre a:hover{
+    color: yellow;
+}
+.footer a:hover{
+    color: yellow;
+}                     /*index*/
+                     /*productos*/
+.dama div:hover{
+    box-shadow: none;
+}
+.hombre div:hover{
+    box-shadow: none;
+}                                 /*en esta parte intente unificar todo el estilo para las cartas pero no me lo aplicaba a todas*/
+.scale__img:hover{                /*te dejo el ejemplo de como lo estaba codeando*/
+    transform: scale(0.9);        /*.card19,.card20,.card21,.card22,.card23,.card24,.card25,.card26,.card27,.card28:hover{border:none}*/   
+}                                 /*solo se aplicaba a la card 28 en este caso, me di cuenta de que se le aplicaba el estilo al elemento*/
+.card1:hover{                     /*que estaba mas cerca del " :hover " no tengo idea de por que */
+    border: none;
+}
+.card2:hover{
+    border: none;
+}
+.card3:hover{
+    border: none;
+} 
+.card4:hover{
+    border: none;
+} 
+.card5:hover{
+    border: none;
+} 
+.card6:hover{
+    border: none;
+} 
+.card7:hover{
+    border: none;
+} 
+.card8:hover{
+    border: none;
+} 
+.card9:hover{
+    border: none;
+} 
+.card10:hover{
+    border: none;
+} 
+.card11:hover{
+    border: none;
+} 
+.card12:hover{
+    border: none;
+} 
+.card13:hover{
+    border: none;
+} 
+.card14:hover{
+    border: none;
+} 
+.card15:hover{
+    border: none;
+} 
+.card16:hover{
+    border: none;
+} 
+.card17:hover{
+    border: none;
+} 
+.card18:hover{
+    border: none;
+} 
+.card19:hover{
+    border: none;
+} 
+.card20:hover{
+    border: none;
+} 
+.card21:hover{
+    border: none;
+} 
+.card22:hover{
+    border: none;
+} 
+.card23:hover{
+    border: none;
+} 
+.card24:hover{
+    border: none;
+} 
+.card25:hover{
+    border: none;
+} 
+.card26:hover{
+    border: none;
+} 
+.card27:hover{
+    border: none;
+} 
+.card28:hover{
+    border: none;
+} 
+.inpt:focus{
+    height:30px ;
+    font-size: 1.5em;
+}
+.inptbtn:hover{
+    color:#42aad0e8;
+}                                         /*animaciones*/                                    
+                                /*modelo responsive*/                                
 @media only screen and (min-width: 1px) and (max-width: 425px){
     .titulo{
         width: 100%;
@@ -526,9 +534,7 @@ justify-items: center;
         display: none;
     }
 }
-
 @media only screen and (min-width: 1px) and (max-width: 425px){
-
     .zapatillas{
         display: grid;
         grid-template-columns: 100%;
@@ -675,11 +681,8 @@ justify-items: center;
     .card28{
         grid-area: card28;
     }
-}
-
-                                /* modelo responsive para novedades */
-
-@media only screen and (min-width: 1px) and (max-width: 425px){
+}                               
+@media only screen and (min-width: 1px) and (max-width: 425px){  /* modelo responsive para novedades */
 
     .novedades1{
         display: grid;
